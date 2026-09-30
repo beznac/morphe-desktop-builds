@@ -130,7 +130,7 @@ jobs:
           cp AppDir/usr/share/icons/hicolor/256x256/apps/morphe-desktop.png AppDir/morphe-desktop.png
 
           # 3. Download appimagetool & build AppImage
-          wget https://github.com/AppImage/AppImageKit/releases/download/13/appimagetool-x86_64.AppImage -O appimagetool
+          wget https://github.com/AppImage/appimagetool/releases/download/1.9.1/appimagetool-x86_64.AppImage -O appimagetool
           chmod +x appimagetool
           ./appimagetool --no-appstream AppDir dist/Morphe-Desktop-Linux-x64.AppImage
 
