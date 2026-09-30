@@ -40,6 +40,9 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Build Fat Shadow JAR
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./gradlew shadowJar assemble --no-daemon
 
       - name: Stage JAR for jpackage
