@@ -14,7 +14,6 @@ plugins {
     id("com.gradleup.shadow")
     application
     `maven-publish`
-    signing
 }
 
 group = "app.morphe"
@@ -492,8 +491,3 @@ publishing {
     }
 }
 
-signing {
-    useGpgCmd()
-
-    sign(publishing.publications["morphe-desktop-publication"])
-}
