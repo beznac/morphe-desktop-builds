@@ -40,7 +40,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Build Fat Shadow JAR
-        run: ./gradlew shadowJar assemble -x sign --no-daemon
+        run: ./gradlew shadowJar assemble --no-daemon
 
       - name: Stage JAR for jpackage
         id: jar_path
