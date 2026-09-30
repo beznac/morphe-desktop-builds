@@ -1,3 +1,6 @@
+# Prebuilt binaries fork
+This fork provides Windows/Linux binaries as artifacts in GitHub Actions, with Java bundled.
+
 <div align="center"> 
 <picture>
     <source
